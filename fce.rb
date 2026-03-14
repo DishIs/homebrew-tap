@@ -5,20 +5,20 @@
 class Fce < Formula
   desc "FreeCustom.Email CLI — Manage disposable inboxes from your terminal."
   homepage "https://github.com/DishIs/fce-cli"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.4/fce_0.1.4_darwin_amd64.tar.gz"
-      sha256 "0be6c7567b9b75963c3fc78c8f973535e855a270379aecd229e9ad4816c7c05d"
+      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.5/fce_0.1.5_darwin_amd64.tar.gz"
+      sha256 "1495ba770c18f3f5e398de1417b2fa24cd1140adbfb7646871dafb798a106e97"
 
       define_method(:install) do
         bin.install "fce"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.4/fce_0.1.4_darwin_arm64.tar.gz"
-      sha256 "121275c4ca18f698396d10b35880bda773e1df8edb336522f1e9a0f75cbfa749"
+      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.5/fce_0.1.5_darwin_arm64.tar.gz"
+      sha256 "f6295c57dc8294d300356a0f929e9df248d4c64becebbe2a36cf8a5f65990d3d"
 
       define_method(:install) do
         bin.install "fce"
@@ -28,15 +28,15 @@ class Fce < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.4/fce_0.1.4_linux_amd64.tar.gz"
-      sha256 "d198540da9d7a737b991a1e3b816bb598f9aabc38c32670e7f1e651c44bdef23"
+      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.5/fce_0.1.5_linux_amd64.tar.gz"
+      sha256 "9104ed2286cb86101caeda07d4a0f7d0d7282a122d0ca4f4059e0b4748343bc3"
       define_method(:install) do
         bin.install "fce"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.4/fce_0.1.4_linux_arm64.tar.gz"
-      sha256 "b2153e69bd45f07a0eb847fbbc76ef2de97656ea55c929f416498804d01ca885"
+      url "https://github.com/DishIs/fce-cli/releases/download/v0.1.5/fce_0.1.5_linux_arm64.tar.gz"
+      sha256 "9a5022304a7007c0b36619161eb3694470a7a932fc2cb2d7705e6e63f6a6f6fc"
       define_method(:install) do
         bin.install "fce"
       end
